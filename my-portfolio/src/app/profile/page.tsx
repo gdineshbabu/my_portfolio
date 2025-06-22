@@ -3,7 +3,6 @@
 import { Github, Linkedin, Twitter, Code, ExternalLink, Briefcase, GraduationCap, Send, X, Award } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import profileImage from '../../../public/praveen.jpeg'; 
 
 // --- TYPE DEFINITIONS ---
 interface PortfolioImageProps {
@@ -43,6 +42,8 @@ const PortfolioImage: React.FC<PortfolioImageProps> = ({ src, alt }) => {
     <motion.img
       src={imgSrc}
       alt={alt}
+      width={400}
+      height={400}
       className="w-full h-full object-cover"
       onError={() => setImgSrc(fallbackSrc)}
       initial={{ scale: 0.9, opacity: 0 }}
