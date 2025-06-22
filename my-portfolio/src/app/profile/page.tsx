@@ -1,8 +1,9 @@
 "use client";
 
-import { Github, Linkedin, Twitter, Instagram, Code, ExternalLink, Briefcase, GraduationCap, Send, X, Award } from 'lucide-react';
+import { Github, Linkedin, Twitter, Code, ExternalLink, Briefcase, GraduationCap, Send, X, Award } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import profileImage from '../../../public/praveen.jpeg'; 
 
 // --- TYPE DEFINITIONS ---
 interface PortfolioImageProps {
@@ -106,7 +107,7 @@ const Header = () => {
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-5">
                 <div className="text-2xl font-bold text-slate-800 tracking-wider">
-                    <a href="#hero">Rohini.</a>
+                    <a href="#hero">A. Praveen</a>
                 </div>
                 <nav className="hidden md:flex items-center space-x-8 text-slate-600 font-medium">
                     <a href="#about" className="hover:text-teal-500 transition-colors duration-300">About</a>
@@ -134,13 +135,13 @@ const Hero = () => (
             transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tighter">
-            Nuliviti Rohini
+            A. Praveen
           </h1>
           <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-semibold text-teal-600">
-            Aspiring Frontend Developer
+            Developer & AI Enthusiast
           </h2>
           <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto md:mx-0">
-            A recent B.Tech ECE graduate with a passion for building modern, responsive, and user-friendly web applications. Eager to apply my skills in a challenging and dynamic environment.
+            A B.Tech student majoring in AI & Data Science with a passion for software development and problem-solving. Eager to contribute to innovative projects and grow my skills.
           </p>
           <div className="mt-10 flex gap-4 justify-center md:justify-start">
              <a href="#contact" className="inline-flex items-center gap-2 bg-teal-500 text-white font-semibold text-lg px-8 py-4 rounded-lg hover:bg-teal-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
@@ -160,8 +161,8 @@ const Hero = () => (
            <div className="absolute inset-0 bg-gradient-to-br from-teal-300 via-sky-300 to-purple-300 rounded-full blur-2xl opacity-50"></div>
            <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white">
             <PortfolioImage
-              src="https://placehold.co/400x400/f1f5f9/334155?text=N.R"
-              alt="A portrait of Nuliviti Rohini"
+              src="https://i.ibb.co/WWnZQCGv/praveen.jpg"
+              alt="A portrait of A. Praveen"
             />
            </div>
         </motion.div>
@@ -175,8 +176,8 @@ const About = () => (
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-4">About Me</h2>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto space-y-4">
-            <span>As a recent 2024 graduate in Electronics and Communication Engineering, I&apos;ve developed a strong passion for software development, particularly in creating intuitive and dynamic web experiences. My academic background in ECE has provided me with a solid foundation in logical thinking and problem-solving, which I now apply to the world of coding.</span>
-            <span>I am proficient in modern frontend technologies like React and Next.js, and I enjoy turning complex problems into beautiful, functional user interfaces. I am a quick learner, highly adaptable, and excited to contribute my skills to a forward-thinking team. I am eager to begin my professional journey and build innovative solutions.</span>
+            <span>I am a dedicated and passionate student pursuing a B.Tech in CSE with a specialization in Artificial Intelligence and Data Science. My goal is to leverage my growing skills in Java, Python, and problem-solving to contribute to innovative software development projects.</span>
+            <span>I am a strong believer in continuous learning and am always exploring new technologies. My academic projects have allowed me to delve into areas like deep learning, and I am eager to apply this knowledge to real-world challenges in a forward-thinking organization.</span>
         </p>
       </div>
     </div>
@@ -193,28 +194,29 @@ const Education = () => (
                 <div className="bg-white p-8 rounded-lg shadow-lg flex items-center gap-8">
                     <div className="text-teal-500"> <GraduationCap size={64} /> </div>
                     <div>
-                        <p className="text-sm font-semibold text-slate-500">2020 - 2024</p>
+                        <p className="text-sm font-semibold text-slate-500">2022 - 2026 (Pursuing)</p>
                         <h3 className="text-2xl font-bold text-slate-800">Bachelor of Technology (B.Tech)</h3>
-                        <p className="text-lg font-semibold text-slate-700">Electronics and Communication Engineering</p>
+                        <p className="text-lg font-semibold text-slate-700">CSE (AI & Data Science)</p>
                         <p className="mt-1 text-slate-600">Mother Theresa Institute of Engineering and Technology, Palamaner</p>
-                        <p className="mt-1 font-bold text-teal-600">Aggregate: 80%</p>
+                        <p className="mt-1 font-bold text-teal-600">Current Aggregate: 76%</p>
                     </div>
                 </div>
                  <div className="bg-white p-8 rounded-lg shadow-lg flex items-center gap-8">
                     <div className="text-teal-500"> <Briefcase size={60} /> </div>
                     <div>
-                        <p className="text-sm font-semibold text-slate-500">2018 - 2020</p>
+                        <p className="text-sm font-semibold text-slate-500">2020 - 2022</p>
                         <h3 className="text-2xl font-bold text-slate-800">Intermediate Education</h3>
-                        <p className="text-lg font-semibold text-slate-700">AP Model School, Kurabalakota</p>
-                        <p className="mt-1 font-bold text-teal-600">Aggregate: 80%</p>
+                        <p className="text-lg font-semibold text-slate-700">Srichaitanya Junior College, Madanapalli</p>
+                        <p className="mt-1 font-bold text-teal-600">Aggregate: 63%</p>
                     </div>
                 </div>
                  <div className="bg-white p-8 rounded-lg shadow-lg flex items-center gap-8">
                     <div className="text-teal-500"> <Award size={56} /> </div>
                     <div>
-                        <p className="text-sm font-semibold text-slate-500">2017 - 2018</p>
+                        <p className="text-sm font-semibold text-slate-500">2020</p>
                         <h3 className="text-2xl font-bold text-slate-800">10th Class (SSC)</h3>
-                        <p className="text-lg font-semibold text-slate-700">AP Model School, Kurabalakota</p>
+                        <p className="text-lg font-semibold text-slate-700">Viswamaithri English Medium High School, Vayalpad</p>
+                        <p className="mt-1 font-bold text-teal-600">GPA: 8.0</p>
                     </div>
                 </div>
             </div>
@@ -224,35 +226,35 @@ const Education = () => (
 
 const projectData: Project[] = [
     {
-        title: "Personal Portfolio Website",
-        category: "Web Application",
-        description: "My personal portfolio to showcase my skills and projects, built with Next.js and Tailwind CSS.",
-        longDescription: "This website itself is a project designed to demonstrate my abilities in frontend development. It is built using Next.js for server-side rendering and performance, styled with Tailwind CSS for a modern and responsive design, and includes interactive elements powered by Framer Motion for a smooth user experience.",
-        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        title: "Image Segmentation & Object Detection",
+        category: "Deep Learning",
+        description: "A mini-project focusing on identifying and classifying objects within images using deep learning techniques.",
+        longDescription: "This project was developed using Python and core deep learning libraries to explore the domain of computer vision. It involved implementing algorithms for segmenting images into different regions and then applying object detection models to identify and locate specific objects within those segments. This project provided hands-on experience with data preprocessing, model training, and evaluating performance metrics for computer vision tasks.",
+        tags: ["Python", "Deep Learning", "Computer Vision", "TensorFlow/Keras"],
         liveUrl: "#",
         repoUrl: "#",
+        image: "https://placehold.co/600x400/e0f2fe/334155?text=Object+Detection"
+    },
+    {
+        title: "Personal Portfolio Website",
+        category: "Web Application",
+        description: "This very portfolio, built with Next.js and Tailwind CSS to showcase my skills and projects.",
+        longDescription: "This website is a project designed to demonstrate my abilities in frontend development. It's built using Next.js for server-side rendering and performance, styled with Tailwind CSS for a modern and responsive design, and includes interactive elements powered by Framer Motion for a smooth user experience.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        liveUrl: "#",
+        repoUrl: "https://github.com/praveen44",
         image: "https://placehold.co/600x400/e0f2fe/334155?text=Portfolio"
     },
     {
-        title: "Weather Forecast App",
-        category: "Web Application",
-        description: "A simple weather application that fetches and displays weather data from a third-party API.",
-        longDescription: "This application allows users to search for a city and get real-time weather forecasts. It was built using React and involved making asynchronous API calls to a weather service like OpenWeatherMap. This project helped me solidify my understanding of state management, component lifecycle, and handling API data in a React application.",
-        tags: ["React", "JavaScript", "REST API", "CSS"],
-        liveUrl: "#",
-        repoUrl: "#",
-        image: "https://placehold.co/600x400/cffafe/334155?text=Weather+App"
-    },
-    {
-        title: "Basic E-commerce UI",
-        category: "UI/UX Design",
-        description: "A responsive user interface for an e-commerce website, focusing on clean design and user experience.",
-        longDescription: "This project focused purely on the frontend implementation of an e-commerce site. I designed and built key pages like the homepage, product listings, and product detail pages. The focus was on creating a responsive layout using CSS Flexbox and Grid, and ensuring the UI was intuitive and visually appealing across different devices.",
+        title: "E-commerce UI/UX",
+        category: "UI Design",
+        description: "A responsive user interface design for an e-commerce website, focusing on a clean layout and intuitive user experience.",
+        longDescription: "This project focused purely on the frontend implementation and design of an e-commerce site. I designed and built key pages like the homepage, product listings, and product detail pages. The focus was on creating a responsive layout using modern CSS, and ensuring the UI was visually appealing and easy to navigate across different devices.",
         tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
         liveUrl: "#",
         repoUrl: "#",
         image: "https://placehold.co/600x400/dbeafe/334155?text=E-commerce+UI"
-    },
+    }
 ];
 
 const FeaturedProjects = () => {
@@ -265,7 +267,7 @@ const FeaturedProjects = () => {
                      <h2 className="text-4xl font-bold text-slate-900 tracking-tight">My Projects</h2>
                      <p className="mt-2 text-lg text-slate-600">A selection of my work. Click for more details.</p>
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
                     {projectData.map((project, index) => (
                         <ProjectCard key={index} project={project} onCardClick={() => setSelectedProject(project)} />
                     ))}
@@ -335,9 +337,9 @@ const ProjectModal: React.FC<{ project: Project; onClose: () => void; }> = ({ pr
 );
 
 const skillsData = {
-    "Frontend": ["HTML", "CSS", "JavaScript", "React.js", "Next.js"],
-    "Backend": ["Python", "Java (Basics)", "Node.js", "Django"],
-    "AI & Developer Tools": ["ChatGPT", "Gemini", "Replit", "v0", "Lovable", "DeepSeek", "GitHub Copilot", "Git"],
+    "Languages": ["Python", "Java (Basics)", "SQL", "HTML"],
+    "Frameworks & Libraries": ["React.js", "Next.js", "Node.js", "Tailwind CSS", "NumPy", "Pandas"],
+    "Developer Tools": ["Git & GitHub", "VS Code", "Jupyter Notebook"],
 };
 
 const Skills = () => (
@@ -345,7 +347,6 @@ const Skills = () => (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-slate-900 tracking-tight">Technical Skills</h2>
-                <p className="mt-2 text-lg text-slate-600">My technical toolkit.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-10">
                 {Object.entries(skillsData).map(([category, skills]) => (
@@ -372,17 +373,16 @@ const Skills = () => (
 );
 
 const certificationData: Certification[] = [
-    { title: "Responsive Web Design", issuer: "freeCodeCamp", url: "#" },
-    { title: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp", url: "#" },
-    { title: "Python for Everybody Specialization", issuer: "Coursera", url: "#" },
+    { title: "Best Performer - Deep Learning & Generative AI Workshop", issuer: "College Workshop", url: "#" },
+    { title: "Certificate of Participation - EduSkills TECH CAMP on Google AI-ML", issuer: "EduSkills & Google", url: "#" },
+    { title: "1st Prize - Poster Presentation on Science Day", issuer: "College Event", url: "#" },
 ];
 
 const Certifications = () => (
     <AnimatedSection id="certifications">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-slate-900 tracking-tight">Certifications</h2>
-                <p className="mt-2 text-lg text-slate-600">My credentials and learning achievements.</p>
+                <h2 className="text-4xl font-bold text-slate-900 tracking-tight">Awards & Certifications</h2>
             </div>
             <div className="max-w-3xl mx-auto space-y-6">
                 {certificationData.map((cert, i) => (
@@ -421,9 +421,9 @@ const Contact = () => (
             <div className="max-w-3xl mx-auto text-center bg-teal-500/10 p-10 md:p-16 rounded-2xl">
                  <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-4">Let&apos;s Connect</h2>
                  <p className="text-lg text-slate-700 mb-8">
-                    I am actively looking for new opportunities. If you have a role that you think I&apos;d be a good fit for, or just want to chat, please feel free to reach out!
+                    I am actively looking for internship and full-time opportunities where I can apply my skills and continue to learn. Feel free to reach out!
                  </p>
-                 <a href="mailto:rohiniroyal20@gmail.com" className="inline-flex items-center gap-3 bg-teal-500 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:bg-teal-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                 <a href="mailto:rohan91821@gmail.com" className="inline-flex items-center gap-3 bg-teal-500 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:bg-teal-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                     Say Hello <Send size={20}/>
                  </a>
             </div>
@@ -435,16 +435,15 @@ const Footer = () => (
   <footer className="py-10 bg-slate-200">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-600">
         <div className="flex justify-center gap-8 mb-6">
-            <SocialLink href="#" icon={Github} label="GitHub" />
-            <SocialLink href="#" icon={Linkedin} label="LinkedIn" />
+            <SocialLink href="https://github.com/praveen44" icon={Github} label="GitHub" />
+            <SocialLink href="https://www.linkedin.com/in/avula-praveen-0124b4348" icon={Linkedin} label="LinkedIn" />
             <SocialLink href="#" icon={Twitter} label="Twitter" />
-            <SocialLink href="#" icon={Instagram} label="Instagram" />
         </div>
          <div className="text-sm text-slate-500">
-            <p className="font-semibold text-slate-600 mb-2">Nuliviti Rohini</p>
-            <p>Marathahalli, Bangalore, Karnataka-560037</p>
+            <p className="font-semibold text-slate-600 mb-2">A. Praveen</p>
+            <p>Pathepuram(Vi), Vayalpad(M), Annamayya, Andhra Pradesh</p>
         </div>
-        <p className="mt-6">&copy; {new Date().getFullYear()} Nuliviti Rohini. All rights reserved.</p>
+        <p className="mt-6">&copy; {new Date().getFullYear()} A. Praveen. All rights reserved.</p>
     </div>
   </footer>
 );

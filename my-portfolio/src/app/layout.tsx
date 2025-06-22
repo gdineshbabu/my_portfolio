@@ -3,8 +3,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Nuliviti Rohini Portfolio",
-  description: "Nuliviti Rohini Portfolio",
+  title: "Praveen Portfolio",
+  description: "Praveen Portfolio",
 };
 
 export default function RootLayout({
